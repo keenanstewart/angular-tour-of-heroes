@@ -1,0 +1,34 @@
+C:\Work\Projects\Angular\ToH\anuglar-tour-of-heros
+
+git status
+
+Log into github, create a new repository using angular-tour-of-heros
+
+Associate new project with new repository
+
+git remote add origin https://github.com/keenanstewart/angular-tour-of-heroes.git
+
+Push remote to Github
+
+git push origin master
+
+To open project in Visual Studio, go to Team Explorer, open green connect button and 
+click on Clone.  Enter in https://github.com/keenanstewart/angular-tour-of-heroes.git
+
+Clone new repository:
+
+In new folder: 
+c:\WorkC:\Work\Projects\Angular\ToHC:\Work\Projects\Angular\ToH
+
+start a new respository:
+echo "# angular-tour-of-heroes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/keenanstewart/angular-tour-of-heroes.git
+git push -u origin master
+
+Push an existing repository:
+
+git remote add origin https://github.com/keenanstewart/angular-tour-of-heroes.git
+git push -u origin master
