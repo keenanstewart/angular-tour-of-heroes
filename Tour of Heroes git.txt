@@ -2,6 +2,10 @@ https://angular.io/tutorial/toh-pt0
 
 C:\Work\Projects\Angular\ToH\anuglar-tour-of-heros
 
+
+Start a new git in the current directory
+git init 
+
 git status
 
 Log into github, create a new repository using angular-tour-of-heros
@@ -34,3 +38,8 @@ Push an existing repository:
 
 git remote add origin https://github.com/keenanstewart/angular-tour-of-heroes.git
 git push -u origin master
+
+
+After setting up a new ssh in github, run this command to use it from Visual Studio:
+
+git config --global url."git@github.com:".insteadOf "https://github.com/"
