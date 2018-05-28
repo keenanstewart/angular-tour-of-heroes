@@ -1,6 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <h1>{{ title }}</h1>
 
-<app-heroes></app-heroes>
+<nav>
+    <div class="grid grid-pad">
+        <a routerLink="/dashboard" class="col-1-4">Dashboard</a>
+        <a routerLink="/heroes" class="col-1-4">Heroes</a>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
 
 <app-messages></app-messages>

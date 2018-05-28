@@ -11,14 +11,17 @@ import { MessageService } from "./message.service";
 export class HeroService {
 
     public constructor(public messageService: MessageService) { }
-
-    //public getHeroes(): Observable<Hero[]>
-    //{
-    //    return of (HEROES);
-    //}
+    
     public getHeroes(): Promise<Hero[]>
     {
         this.messageService.add("HeroService: fetched heroes");
         return Promise.resolve(HEROES);
+    }
+
+    public getHero(id: number): Observable<Hero>
+    {
+        // TODO: send the message _after_ fetching the hero
+        this.messageService.add(`HeroService: fetched hero id=${id}`);
+        return of(HEROES.find(hero => hero.id === id));
     }
 }
